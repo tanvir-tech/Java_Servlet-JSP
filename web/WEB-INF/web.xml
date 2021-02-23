@@ -6,7 +6,7 @@
 
 <!--    starting page-->
     <welcome-file-list>
-        <welcome-file>/view/login.html</welcome-file>
+        <welcome-file>/view/ShoppingCart.html</welcome-file>
     </welcome-file-list>
 <!--    starting page end-->
 <!--login-->
@@ -79,4 +79,24 @@
         <url-pattern>/result_mul</url-pattern>
     </servlet-mapping>
     <!--    result end-->
+<!--    shopping cart-->
+    <servlet>
+        <servlet-name>cart</servlet-name>
+        <servlet-class>main.java.controller.Cookies.AddCookieServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cart</servlet-name>
+        <url-pattern>/cart</url-pattern>
+    </servlet-mapping>
+<!--    shopping cart end-->
+<!--    shopping cart show-->
+    <servlet>
+        <servlet-name>cartShow</servlet-name>
+        <servlet-class>main.java.controller.Cookies.ShowCookieServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cartShow</servlet-name>
+        <url-pattern>/cartShow</url-pattern>
+    </servlet-mapping>
+<!--    shopping cart show end-->
 </web-app>
