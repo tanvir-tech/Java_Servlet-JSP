@@ -6,10 +6,29 @@
 
 <!--    starting page-->
     <welcome-file-list>
-        <welcome-file>/view/index.html</welcome-file>
+        <welcome-file>/view/login.html</welcome-file>
     </welcome-file-list>
 <!--    starting page end-->
-
+<!--login-->
+    <servlet>
+        <servlet-name>login</servlet-name>
+        <servlet-class>main.java.controller.HTTP_Session.User_Set</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>login</servlet-name>
+        <url-pattern>/verify</url-pattern>
+    </servlet-mapping>
+<!--    login end-->
+<!--    user name show-->
+    <servlet>
+        <servlet-name>userName</servlet-name>
+        <servlet-class>main.java.controller.HTTP_Session.User_Show</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>userName</servlet-name>
+        <url-pattern>/userName</url-pattern>
+    </servlet-mapping>
+<!--    user name show end-->
 <!--    index-->
     <servlet>
         <servlet-name>index</servlet-name>

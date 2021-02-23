@@ -12,6 +12,6 @@ public class MultiplyServlet extends HttpServlet {
 
         int mul = num1*num2;
 
-        res.sendRedirect("result_mul?mul="+mul);
+        res.sendRedirect("result_mul?mul="+mul);        //URL rewritting
     }
 }
