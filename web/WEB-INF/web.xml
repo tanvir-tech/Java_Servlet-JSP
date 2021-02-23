@@ -99,4 +99,20 @@
         <url-pattern>/cartShow</url-pattern>
     </servlet-mapping>
 <!--    shopping cart show end-->
+<!--    web app constant-->
+    <context-param>
+        <param-name>webapp_name</param-name>
+        <param-value>Java_WEB_01</param-value>
+    </context-param>
+<!--    web app constant end-->
+<!--    web app value caller-->
+    <servlet>
+        <servlet-name>webAppCaller</servlet-name>
+        <servlet-class>main.java.controller.Context_Config.WebApp_Constant</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>webAppCaller</servlet-name>
+        <url-pattern>/webAppCaller</url-pattern>
+    </servlet-mapping>
+<!--    web app value caller end-->
 </web-app>
