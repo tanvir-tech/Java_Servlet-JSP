@@ -23,7 +23,7 @@
 <!--    add-->
 <servlet>
     <servlet-name>add</servlet-name>
-    <servlet-class>main.java.controller.AddServlet</servlet-class>
+    <servlet-class>main.java.controller.request_Dispatcher.AddServlet</servlet-class>
 </servlet>
     <servlet-mapping>
         <servlet-name>add</servlet-name>
@@ -33,11 +33,31 @@
 <!--    result-->
     <servlet>
         <servlet-name>result</servlet-name>
-        <servlet-class>main.java.controller.ResultServlet</servlet-class>
+        <servlet-class>main.java.controller.request_Dispatcher.ResultServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>result</servlet-name>
         <url-pattern>/result</url-pattern>
     </servlet-mapping>
 <!--    result end-->
+<!--    multiply-->
+    <servlet>
+        <servlet-name>multiply</servlet-name>
+        <servlet-class>main.java.controller.send_Redirect.MultiplyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>multiply</servlet-name>
+        <url-pattern>/multiply</url-pattern>
+    </servlet-mapping>
+<!--    multiply end-->
+    <!--    result-->
+    <servlet>
+        <servlet-name>result_mul</servlet-name>
+        <servlet-class>main.java.controller.send_Redirect.ResulServlet_mul</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>result_mul</servlet-name>
+        <url-pattern>/result_mul</url-pattern>
+    </servlet-mapping>
+    <!--    result end-->
 </web-app>
