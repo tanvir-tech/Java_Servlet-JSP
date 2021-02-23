@@ -3,9 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+
+<!--    starting page-->
     <welcome-file-list>
-        <welcome-file>/view/index2.html</welcome-file>
+        <welcome-file>/view/index.html</welcome-file>
     </welcome-file-list>
+<!--    starting page end-->
+
 <!--    index-->
     <servlet>
         <servlet-name>index</servlet-name>
@@ -19,11 +23,21 @@
 <!--    add-->
 <servlet>
     <servlet-name>add</servlet-name>
-    <servlet-class>main.java.controller.Add_Servlet</servlet-class>
+    <servlet-class>main.java.controller.AddServlet</servlet-class>
 </servlet>
     <servlet-mapping>
         <servlet-name>add</servlet-name>
         <url-pattern>/add</url-pattern>
     </servlet-mapping>
 <!--    add end-->
+<!--    result-->
+    <servlet>
+        <servlet-name>result</servlet-name>
+        <servlet-class>main.java.controller.ResultServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>result</servlet-name>
+        <url-pattern>/result</url-pattern>
+    </servlet-mapping>
+<!--    result end-->
 </web-app>
