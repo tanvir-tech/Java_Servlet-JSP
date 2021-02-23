@@ -115,4 +115,20 @@
         <url-pattern>/webAppCaller</url-pattern>
     </servlet-mapping>
 <!--    web app value caller end-->
+
+    <!--    servlet parameter caller-->
+    <servlet>
+        <servlet-name>servletName</servlet-name>
+        <servlet-class>main.java.controller.Context_Config.Servlet_Constant</servlet-class>
+<!--        servletName-->
+        <init-param>
+            <param-name>servletName</param-name>
+            <param-value>test_servlet_demo</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servletName</servlet-name>
+        <url-pattern>/servletName</url-pattern>
+    </servlet-mapping>
+    <!--    servlet parameter caller end-->
 </web-app>
