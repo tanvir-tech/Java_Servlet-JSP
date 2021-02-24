@@ -6,7 +6,7 @@
 
 <!--    starting page-->
     <welcome-file-list>
-        <welcome-file>/view/ShoppingCart.html</welcome-file>
+        <welcome-file>/view/login/login.jsp</welcome-file>
     </welcome-file-list>
 <!--    starting page end-->
 <!--login-->
